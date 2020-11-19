@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TableContainer, Title } from '../styles';
+import { TableContainer, Title } from '../../Dashboard/styles';
 
 function OperationTable() {
   const tableHeader = [
@@ -17,7 +17,7 @@ function OperationTable() {
   ]
 
   return (
-    <TableContainer marginTop='20px'>
+    <TableContainer marginTop='-70px'>
       <Title>Fila de operação</Title>
       <table >
         <thead>

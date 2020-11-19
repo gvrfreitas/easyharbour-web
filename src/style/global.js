@@ -8,4 +8,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body{
+    margin-bottom: 50px;
+  }
 `;
