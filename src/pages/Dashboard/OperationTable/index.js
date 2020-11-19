@@ -1,26 +1,23 @@
 import React from 'react';
 
-import { TableContainer, Title } from './styles';
+import { TableContainer, Title } from '../styles';
 
-function Table() {
+function OperationTable() {
   return (
-    <TableContainer>
-      <Title>Fila de atracação</Title>
-      <table>
+    <TableContainer marginTop='20px'>
+      <Title>Fila de operação</Title>
+      <table >
         <thead>
           <tr>
-            <th>Posição</th>
-            <th>Nome do navio</th>
-            <th>Draft (Calado) (m)</th>
-            <th>Beam (Largura) (m)</th>
-            <th> ATA (Data de chegada)</th>
-            <th>WT (Tempo de espera)</th>
-            <th>Produto</th>
-            <th>Capacidade </th>
-            <th>Prioridade</th>
-            <th>Programado</th>
-            <th>Atracação prevista</th>
+            <th>Nome</th>
             <th>Berço</th>
+            <th>Produto</th>
+            <th>Peso bruto</th>
+            <th>Porto destino</th>
+            <th>Atracação efetiva</th>
+            <th>Laytime</th>
+            <th>Desatracação prevista</th>
+            <th>Desatracação efetiva</th>
             <th>Status</th>
           </tr>
         </thead>
@@ -28,6 +25,18 @@ function Table() {
         <tbody>
           <tr>
             <td>1°</td>
+            <td>asjdhjsanfnsadnffsn</td>
+            <td> 12</td>
+            <td> 229</td>
+            <td>10/11/2020 17:30:00</td>
+            <td>2horas</td>
+            <td>Milho a granel</td>
+            <td>61200</td>
+            <td>8</td>
+            <td>Sim</td>
+          </tr>
+          <tr>
+            <td>2°</td>
             <td>CUMA</td>
             <td> 12</td>
             <td> 229</td>
@@ -38,8 +47,6 @@ function Table() {
             <td>8</td>
             <td>Sim</td>
             <td></td>
-            <td>38</td>
-            <td>Adiantado</td>
           </tr>
           <tr>
             <td>1°</td>
@@ -53,8 +60,6 @@ function Table() {
             <td>8</td>
             <td>Sim</td>
             <td></td>
-            <td>38</td>
-            <td>Adiantado</td>
           </tr>
           <tr>
             <td>1°</td>
@@ -67,24 +72,6 @@ function Table() {
             <td>61200</td>
             <td>8</td>
             <td>Sim</td>
-            <td></td>
-            <td>38</td>
-            <td>Adiantado</td>
-          </tr>
-          <tr>
-            <td>1°</td>
-            <td>CUMA</td>
-            <td> 12</td>
-            <td> 229</td>
-            <td>10/11/2020 17:30:00</td>
-            <td>2horas</td>
-            <td>Milho a granel</td>
-            <td>61200</td>
-            <td>8</td>
-            <td>Sim</td>
-            <td></td>
-            <td>38</td>
-            <td>Adiantado</td>
           </tr>
         </tbody>
 
@@ -93,4 +80,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default OperationTable;

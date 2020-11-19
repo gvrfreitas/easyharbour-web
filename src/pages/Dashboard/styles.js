@@ -1,74 +1,59 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
- font-family: Bradley Hand, cursive;
- font-size:30px;
- color: #345d5a;
-  text-align: center;
-  padding: 10px;
-`;
-
-export const Container = styled.div`
-  background: #fff;
-  border-radius: 15px;
-  margin-left:20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position:relative;
-  width:55%;
-  margin-top: -70px;
+ font-family: 'Roboto', sans-serif;
+ font-size:18px;
+ color: #283333;
+  padding: 20px 0px 20px 20px;
   `;
+
 export const TableContainer = styled.div`
-  width:60%;
   background: #fff;
-  border-radius: 15px;
-  margin-top: 20px;
+  border-radius: 10px;
+  margin-top: ${props => props.marginTop};
   margin-left:20px;
+  margin-right:20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position:relative;
+  overflow-x: auto;
 
   table {
-    width: 96%;
+    width: 100%;
     border-spacing: 0 10px;
-    margin-left:20px;
+
+
     padding-bottom: 10px;
 
-    th {
-      color: #888fab;
-      font-weight: normal;
-      padding: 0px 15px;
-      text-align: left;
-      font-size: 16px;
-      line-height: 24px;
-      border-width: 2px;
-      border-color: red;
+    thead{
+      tr{
+      background: #f1f0f0;
+      }
     }
 
 
+    th {
+      color: #444141;
+      font-weight: normal;
+      padding: 0px 10px 0px 10px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 50px;
+      border: thin solid #e8dcdc;
+      border-width: 0px 0px 2px 0px;
+    }
 
     td{
-      color: #fff;
+      color: black;
+      border: 0;
       font-weight: normal;
-      padding: 10px 15px;
+      padding: 0px 5px 0px 15px;
       text-align: left;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 13px;
+      line-height: 30px;
+      border: thin solid #e8dcdc;
+      border-width: 0px 0px 2px 0px;
     }
 
-    td:first-child{
-        border-radius:5px 0 0 5px;
-    }
-    td:last-child{
-        border-radius:0 5px 5px 0;
-    }
-
-  }
+}
 `;
 
-export const Tr = styled.tr`
-  width:90%;
-  background:${props => props.backgroundColor ? props.backgroundColor : "#3d3d"};
 
-tr:last-child{
-      margin-bottom: 10px;
-    }
-`;
