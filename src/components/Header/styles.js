@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Nav from 'react-bootstrap/Nav'
 
 export const Container = styled.div`
   background: #345d5a !important;
@@ -12,21 +13,29 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    nav{
-      a{
-        font-family: Bradley Hand, cursive;
-        font-size:20px;
-        color:#fff;
-        text-decoration: none;
-
-        &:hover{
-          cursor: pointer;
-        }
-      }
-    }
-
     img{
       max-width:120px;
     }
   }
+`;
+
+export const NavDiv = styled(Nav)`
+       display:flex;
+`;
+
+export const Navlink = styled(Nav.Link)`
+        font-family: 'Roboto', sans-serif;
+        font-size:16px;
+        color:#fff;
+        text-decoration: none;
+        margin-left: 20px;
+
+        &:hover{
+          cursor: pointer;
+        }
+
+        &.active{
+          padding-bottom: 5px;
+          border-bottom: 3px solid #fff;
+        }
 `;

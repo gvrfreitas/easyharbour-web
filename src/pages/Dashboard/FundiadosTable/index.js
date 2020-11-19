@@ -4,7 +4,7 @@ import { TableContainer, Title } from '../styles';
 
 function FundiadosTable() {
   return (
-    <TableContainer marginTop={"-70px"}>
+    <TableContainer marginTop={"20px"}>
       <Title>Fila de atracação</Title>
       <table>
         <thead>

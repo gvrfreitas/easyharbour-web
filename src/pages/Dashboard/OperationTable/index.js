@@ -3,6 +3,19 @@ import React from 'react';
 import { TableContainer, Title } from '../styles';
 
 function OperationTable() {
+  const tableHeader = [
+    "Nome",
+    "Berço",
+    "Produto",
+    "Peso bruto",
+    "Porto destino",
+    "Atracação efetiva",
+    "Laytime",
+    "Desatracação prevista",
+    "Desatracação efetiva",
+    "Status"
+  ]
+
   return (
     <TableContainer marginTop='20px'>
       <Title>Fila de operação</Title>
@@ -46,7 +59,6 @@ function OperationTable() {
             <td>61200</td>
             <td>8</td>
             <td>Sim</td>
-            <td></td>
           </tr>
           <tr>
             <td>1°</td>
@@ -59,7 +71,6 @@ function OperationTable() {
             <td>61200</td>
             <td>8</td>
             <td>Sim</td>
-            <td></td>
           </tr>
           <tr>
             <td>1°</td>
