@@ -8,11 +8,20 @@ export const Title = styled.h1`
   padding: 10px;
 `;
 
-export const TableContainer = styled.div`
-  width:65%;
+export const Container = styled.div`
   background: #fff;
   border-radius: 15px;
+  margin-left:20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position:relative;
+  width:55%;
   margin-top: -70px;
+  `;
+export const TableContainer = styled.div`
+  width:60%;
+  background: #fff;
+  border-radius: 15px;
+  margin-top: 20px;
   margin-left:20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position:relative;
@@ -56,9 +65,8 @@ export const TableContainer = styled.div`
 `;
 
 export const Tr = styled.tr`
-
-      width:90%;
-      background:${props => props.backgroundColor ? props.backgroundColor : "#3d3d"};
+  width:90%;
+  background:${props => props.backgroundColor ? props.backgroundColor : "#3d3d"};
 
 tr:last-child{
       margin-bottom: 10px;

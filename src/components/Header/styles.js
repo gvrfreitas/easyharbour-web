@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #345d5a !important;
-  padding: 90px 0;
+  padding: 0px 0px 88px 0px;
+  width: 100%;
 
   header{
     padding: 0 80px 50px;
-    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
