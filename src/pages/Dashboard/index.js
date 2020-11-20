@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { TableContainer, Title, Tr, Container } from './styles';
-
 import FundiadosTable from './FundiadosTable';
 import GraficoClima from './GraficoClima';
 import GraficoVento from './GraficoVento';

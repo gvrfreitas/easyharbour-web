@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { TableContainer, Title } from '../../Dashboard/styles';
+import { TableContainer, Title } from '../../../components/Table/styles';
+import Table from '../../../components/Table';
 
 function OperationTable() {
   const tableHeader = [
@@ -14,80 +15,64 @@ function OperationTable() {
     "Desatracação prevista",
     "Desatracação efetiva",
     "Status"
-  ]
+  ];
 
   return (
-    <TableContainer marginTop='-70px'>
-      <Title>Fila de operação</Title>
-      <table >
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Berço</th>
-            <th>Produto</th>
-            <th>Peso bruto</th>
-            <th>Porto destino</th>
-            <th>Atracação efetiva</th>
-            <th>Laytime</th>
-            <th>Desatracação prevista</th>
-            <th>Desatracação efetiva</th>
-            <th>Status</th>
-          </tr>
-        </thead>
+    <Table
+      tableHeader={tableHeader}
+      title={"Fila de operação"}
+      marginTop={"-70px"}
+    >
+      <tr>
+        <td>1°</td>
+        <td>asjdhjsanfnsadnffsn</td>
+        <td> 12</td>
+        <td> 229</td>
+        <td>10/11/2020 17:30:00</td>
+        <td>2horas</td>
+        <td>Milho a granel</td>
+        <td>61200</td>
+        <td>8</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>2°</td>
+        <td>CUMA</td>
+        <td> 12</td>
+        <td> 229</td>
+        <td>10/11/2020 17:30:00</td>
+        <td>2horas</td>
+        <td>Milho a granel</td>
+        <td>61200</td>
+        <td>8</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>1°</td>
+        <td>CUMA</td>
+        <td> 12</td>
+        <td> 229</td>
+        <td>10/11/2020 17:30:00</td>
+        <td>2horas</td>
+        <td>Milho a granel</td>
+        <td>61200</td>
+        <td>8</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>1°</td>
+        <td>CUMA</td>
+        <td> 12</td>
+        <td> 229</td>
+        <td>10/11/2020 17:30:00</td>
+        <td>2horas</td>
+        <td>Milho a granel</td>
+        <td>61200</td>
+        <td>8</td>
+        <td>Sim</td>
+      </tr>
+    </Table>
 
-        <tbody>
-          <tr>
-            <td>1°</td>
-            <td>asjdhjsanfnsadnffsn</td>
-            <td> 12</td>
-            <td> 229</td>
-            <td>10/11/2020 17:30:00</td>
-            <td>2horas</td>
-            <td>Milho a granel</td>
-            <td>61200</td>
-            <td>8</td>
-            <td>Sim</td>
-          </tr>
-          <tr>
-            <td>2°</td>
-            <td>CUMA</td>
-            <td> 12</td>
-            <td> 229</td>
-            <td>10/11/2020 17:30:00</td>
-            <td>2horas</td>
-            <td>Milho a granel</td>
-            <td>61200</td>
-            <td>8</td>
-            <td>Sim</td>
-          </tr>
-          <tr>
-            <td>1°</td>
-            <td>CUMA</td>
-            <td> 12</td>
-            <td> 229</td>
-            <td>10/11/2020 17:30:00</td>
-            <td>2horas</td>
-            <td>Milho a granel</td>
-            <td>61200</td>
-            <td>8</td>
-            <td>Sim</td>
-          </tr>
-          <tr>
-            <td>1°</td>
-            <td>CUMA</td>
-            <td> 12</td>
-            <td> 229</td>
-            <td>10/11/2020 17:30:00</td>
-            <td>2horas</td>
-            <td>Milho a granel</td>
-            <td>61200</td>
-            <td>8</td>
-            <td>Sim</td>
-          </tr>
-        </tbody>
-
-      </table>
-    </TableContainer>
   );
 }
 

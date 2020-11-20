@@ -5,7 +5,7 @@ import { FooterDiv } from './styles';
 function Footer() {
   return (
     <FooterDiv >
-      <h3>Easy-Harbor</h3>
+      <h3>Ship's Watchman</h3>
     </FooterDiv>
 
   );
