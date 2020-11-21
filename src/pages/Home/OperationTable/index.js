@@ -1,16 +1,17 @@
 import React from 'react';
 
 import Table from '../../../components/Table';
+import {getColor} from '../../../utils'
 
 function OperationTable() {
   const tableHeader = [
     "Nome",
     "Berço",
     "Produto",
-    "Peso bruto",
+    "Peso Bruto(Ton)",
     "Porto destino",
     "Atracação efetiva",
-    "Laytime",
+    "Tempo estimado de carregamento(Laytime)",
     "Desatracação prevista",
     "Desatracação efetiva",
     "Status"
@@ -23,18 +24,6 @@ function OperationTable() {
       marginTop={"20px"}
     >
       <tr>
-        <td>1°</td>
-        <td>asjdhjsanfnsadnffsn</td>
-        <td> 12</td>
-        <td> 229</td>
-        <td>10/11/2020 17:30:00</td>
-        <td>2horas</td>
-        <td>Milho a granel</td>
-        <td>61200</td>
-        <td>8</td>
-        <td>Sim</td>
-      </tr>
-      <tr>
         <td>2°</td>
         <td>CUMA</td>
         <td> 12</td>
@@ -44,7 +33,7 @@ function OperationTable() {
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
-        <td>Sim</td>
+        <td style= {{color: getColor("Em tempo")}}>Em tempo</td>
       </tr>
       <tr>
         <td>1°</td>
@@ -56,7 +45,7 @@ function OperationTable() {
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
-        <td>Sim</td>
+        <td style= {{color: getColor("Adiantado")}}>Adiantado </td>
       </tr>
       <tr>
         <td>1°</td>
@@ -68,7 +57,7 @@ function OperationTable() {
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
-        <td>Sim</td>
+        <td style= {{color: getColor("Atrasado")}}>Atrasado </td>
       </tr>
     </Table>
 

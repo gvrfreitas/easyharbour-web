@@ -4,12 +4,14 @@ import { Container, NavDiv, Navbar, Navlink } from './styles';
 
 import { Link } from 'react-router-dom';
 
+import Logo from '../../assents/Logo.png';
+
 function Header() {
   return (
     <>
       <Container>
         <header>
-          <img src='https://www.contra.it/wp-content/uploads/2015/08/container-158362_1280.png' alt='Easy-Harbor' />
+          <img src={Logo} alt="Ship's Watchman" />
           <NavDiv>
             <Navlink as={Link} to={"/"} >Home</Navlink>
             <Navlink as={Link} to={'/dashboard'}>Dashboard</Navlink>

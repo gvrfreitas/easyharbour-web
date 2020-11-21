@@ -1,18 +1,18 @@
 import React from 'react';
 
 import Table from '../../../components/Table';
-
+import {getColor} from '../../../utils'
 
 function LineUpTable() {
   const tableHeader = [
     "Posição",
     "Navio",
-    "Draft",
-    "Beam",
-    "ATA",
-    "WT",
+    "Calado(m)",
+    "Largura(m)",
+    "Data de chegada",
+    "Tempo de espera(h)",
     "Produto",
-    "Capacidade ",
+    "Capacidade(Ton)",
     "Prioridade",
     "Programado",
     "Atracação prevista",
@@ -28,7 +28,7 @@ function LineUpTable() {
     >
       <tr>
         <td>1°</td>
-        <td>asjdhjsanfnsadnffsn</td>
+        <td>CUMA</td>
         <td> 12</td>
         <td> 229</td>
         <td>10/11/2020 17:30:00</td>
@@ -39,7 +39,7 @@ function LineUpTable() {
         <td>Sim</td>
         <td></td>
         <td>38</td>
-        <td>Adiantado</td>
+        <td style= {{color: getColor("Adiantado")}}>Adiantado</td>
       </tr>
       <tr>
         <td>2°</td>
@@ -54,7 +54,7 @@ function LineUpTable() {
         <td>Sim</td>
         <td></td>
         <td>38</td>
-        <td>Adiantado</td>
+        <td style= {{color: getColor("Atrasado")}}>Atrasado</td>
       </tr>
       <tr>
         <td>3°</td>
@@ -69,22 +69,7 @@ function LineUpTable() {
         <td>Sim</td>
         <td></td>
         <td>38</td>
-        <td>Adiantado</td>
-      </tr>
-      <tr>
-        <td>4°</td>
-        <td>CUMA</td>
-        <td> 12</td>
-        <td> 229</td>
-        <td>10/11/2020 17:30:00</td>
-        <td>2horas</td>
-        <td>Milho a granel</td>
-        <td>61200</td>
-        <td>8</td>
-        <td>Sim</td>
-        <td></td>
-        <td>38</td>
-        <td>Adiantado</td>
+        <td style= {{color: getColor("Em tempo")}}>Em tempo</td>
       </tr>
     </Table>
   );

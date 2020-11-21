@@ -1,29 +1,27 @@
 import React from 'react';
 
 import Table from '../../../components/Table';
-
+import { getColor } from '../../../utils'
 
 function LineUpTableSugestion() {
   const tableHeader = [
     "Posição",
     "Navio",
-    "Draft",
-    "Beam",
-    "ATA",
-    "WT",
+    "Calado(m)",
+    "Largura(m)",
+    "Data de chegada",
+    "Tempo de espera(h)",
     "Produto",
-    "Capacidade ",
+    "Capacidade(Ton)",
     "Prioridade",
-    "Programado",
-    "Atracação prevista",
+    "Atracação sugerida",
     "Berço",
-    "Status",
   ];
 
   return (
     <Table
       tableHeader={tableHeader}
-      title={"Line up - Programado"}
+      title={"Line up - Sugerido"}
       marginTop={"20px"}
     >
       <tr>
@@ -36,10 +34,8 @@ function LineUpTableSugestion() {
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
-        <td>Sim</td>
         <td></td>
         <td>38</td>
-        <td>Adiantado</td>
       </tr>
       <tr>
         <td>2°</td>
@@ -51,10 +47,8 @@ function LineUpTableSugestion() {
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
-        <td>Sim</td>
         <td></td>
         <td>38</td>
-        <td>Adiantado</td>
       </tr>
       <tr>
         <td>3°</td>
@@ -66,25 +60,8 @@ function LineUpTableSugestion() {
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
-        <td>Sim</td>
         <td></td>
         <td>38</td>
-        <td>Adiantado</td>
-      </tr>
-      <tr>
-        <td>4°</td>
-        <td>CUMA</td>
-        <td> 12</td>
-        <td> 229</td>
-        <td>10/11/2020 17:30:00</td>
-        <td>2horas</td>
-        <td>Milho a granel</td>
-        <td>61200</td>
-        <td>8</td>
-        <td>Sim</td>
-        <td></td>
-        <td>38</td>
-        <td>Adiantado</td>
       </tr>
     </Table>
   );

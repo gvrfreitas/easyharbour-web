@@ -14,7 +14,8 @@ export const Container = styled.div`
     justify-content: space-between;
 
     img{
-      max-width:120px;
+      margin-top:10px;
+      max-width:80px;
     }
   }
 `;
@@ -24,7 +25,6 @@ export const NavDiv = styled(Nav)`
 `;
 
 export const Navlink = styled(Nav.Link)`
-        font-family: 'Roboto', sans-serif;
         font-size:16px;
         color:#fff;
         text-decoration: none;
@@ -40,7 +40,6 @@ export const Navlink = styled(Nav.Link)`
         }
 
         &:active{
-          padding-bottom: 5px;
-          border-bottom: 3px solid #fff;
+         color: #dad6d6;
         }
 `;

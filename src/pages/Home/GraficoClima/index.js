@@ -9,7 +9,7 @@ function GraficoClima() {
   const [loading, setLoading] = useState(true)
   const options = {
     title: {
-      text: 'Chances de chuva'
+      text: 'Precipitação'
     },
     xAxis: {
       title: {

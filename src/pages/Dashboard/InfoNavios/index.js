@@ -9,23 +9,29 @@ import { TableContainer } from '../styles';
 const InfoPrecisamMare = styled.div`
     border: solid;
     border-width: 0px 1px 0px 0px;
-    padding: 17px 12px 0px 37px;
+    padding: 4px 12px 0px 37px;
     justify-content: center;
+    width: 50%;
 
-    h1{
-      margin-left: 20%;
+    span{
+      margin-left: 15%;
+      color: #333333;
+      font-size: 25px;
+      fill: #333333;
     }
 
     ul{
-      margin-top: 20px;
+      margin-top: 30px;
       li{
-          font-size: 25px;
-          list-style-type: none;
+        font-size: 20px;
+        list-style-type: none;
+        text-align: center;
 
           h2{
-            padding: 10px 0px 0px 0px;
+            text-align:left;
+            padding: 10px 0px 0px 30px;
             margin-left: 30%;
-            font-size: 60px;
+            font-size: 20px;
           }
         }
     }
@@ -59,7 +65,7 @@ function InfoNavios() {
     yAxis: {
       min: 0,
       title: {
-        text: 'Porcentagem'
+        text: ''
       },
       labels: {
         format: '{value}%',
@@ -87,7 +93,7 @@ function InfoNavios() {
   return (
     <Container>
       <InfoPrecisamMare >
-        <h1>Navio x Maré</h1>
+        <span>Navio x Maré</span>
         <div style={{ display: "flex" }}>
           <ul>
             <li>Necessidade de maré para manobra</li>

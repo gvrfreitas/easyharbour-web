@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
- font-family: 'Roboto', sans-serif;
  font-size:18px;
  color: #283333;
   padding: 20px 0px 20px 20px;

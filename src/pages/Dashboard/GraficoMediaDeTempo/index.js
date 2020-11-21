@@ -13,7 +13,10 @@ function GraficoMediaDeTempo() {
         type: 'pie'
     },
     title: {
-        text: 'Tempo médio de permanência'
+      text: 'Tempo de permanência (h)'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
     },
     accessibility: {
         point: {
@@ -25,26 +28,35 @@ function GraficoMediaDeTempo() {
             allowPointSelect: true,
             cursor: 'pointer',
             dataLabels: {
-                enabled: false
-            },
-            showInLegend: true
+                enabled: true,
+                format: '<b>{point.name}</b><br>{point.percentage:.1f} %',
+                style:{
+                  fontSize: 13,
+                },
+                distance: -50,
+                filter: {
+                    property: 'percentage',
+                    operator: '>',
+                    value: 4
+                }
+            }
         }
     },
     series: [{
-        name: 'tempo',
-        colorByPoint: true,
-        data: [{
-            name: 'Área de fudeio',
-            y: 61.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Porto',
-            y: 38.59,
-            sliced: false,
-            selected: true
+            name: 'tempo',
+            colorByPoint: true,
+            data: [{
+                name: 'Área de fudeio',
+                y: 61.41,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Porto',
+                y: 38.59,
+                sliced: false,
+                selected: true
+            }]
         }]
-    }]
 }
 
     return (

@@ -10,5 +10,6 @@ export default createGlobalStyle`
 
   body{
     margin-bottom: 50px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
   }
 `;

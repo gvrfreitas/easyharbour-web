@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
- font-family: 'Roboto', sans-serif;
  font-size:18px;
  color: #283333;
   padding: 20px 0px 20px 20px;
@@ -19,7 +18,6 @@ export const TableContainer = styled.div`
   table {
     width: 100%;
     border-spacing: 0 10px;
-    font-family: 'Roboto', sans-serif;
 
     padding-bottom: 10px;
 
@@ -36,7 +34,7 @@ export const TableContainer = styled.div`
       padding: 0px 10px 0px 10px;
       text-align: left;
       font-size: 15px;
-      line-height: 50px;
+      line-height: 30px;
       border: thin solid #e8dcdc;
       border-width: 0px 0px 2px 0px;
     }

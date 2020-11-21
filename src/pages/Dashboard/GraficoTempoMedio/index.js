@@ -10,10 +10,10 @@ function GraficoTempoMedio() {
         type: 'column'
     },
     title: {
-        text: 'Tempo Médio de Ocupação do Berço'
+        text: 'Tempo médio de ocupação'
     },
     subtitle: {
-        text: 'Data: <a href="https://en.wikipedia.org/wiki/World_population">15/11 a 21/11</a>'
+        text: 'Semana: <a href="https://en.wikipedia.org/wiki/World_population">15/11 a 21/11</a>'
     },
     xAxis: {
         categories: ['Armazém 16', 'Armazém 17', 'Armazém 19', 'Armazém 20', 'Armazém 21', 'Outeirinhos 3', 'Armazém 38', 'Armazém 39',],
@@ -25,7 +25,7 @@ function GraficoTempoMedio() {
         min: 0,
         max: 168,
         title: {
-            text: 'Horas por semana (H)',
+            text: 'Horas (H)',
         }
     },
     tooltip: {

@@ -13,19 +13,16 @@ function GraficoPercentualPortuario() {
         text: 'Status'
     },
     subtitle: {
-        text: 'Data: <a href="https://en.wikipedia.org/wiki/World_population">15/11 a 21/11</a>'
+        text: 'Semana: <a href="https://en.wikipedia.org/wiki/World_population">15/11 a 21/11</a>'
     },
     xAxis: {
         categories: ['Fundiados', 'Operação'],
-        title: {
-            text: "Status"
-        }
     },
     yAxis: {
         min: 0,
         max: 100,
         title: {
-            text: 'Porcentagem por semana (%)',
+            text: 'Percentual (%)',
         }
     },
     tooltip: {
@@ -42,13 +39,13 @@ function GraficoPercentualPortuario() {
         enabled: false
     },
     series: [{
-        name: 'Atrasados',
+        name: 'Atrasado',
         data: [50, 70]
     }, {
         name: 'Em Tempo',
         data: [23, 69]
     }, {
-        name: 'Adiantados',
+        name: 'Adiantado',
         data: [23, 69]
     }]
 }

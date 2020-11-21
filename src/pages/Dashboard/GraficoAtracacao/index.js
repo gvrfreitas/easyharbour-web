@@ -18,7 +18,7 @@ function GraficoAtracacao() {
   yAxis: {
       min: 0,
       title: {
-          text: 'Porcentagem'
+          text: ''
       },
       labels: {
         format: '{value}%',

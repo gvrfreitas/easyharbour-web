@@ -5,7 +5,7 @@ import HighchartsReact from 'highcharts-react-official';
 import { Container } from '../styles';
 
 function GraficoMare() {
-  const [data, setData] = useState([1, 2, 3, 1, 5, 3, 5, 6, 7, 8, 9, 9, 2, 9, 8, 8, 5, 5, 5])
+  const [data, setData] = useState([0.2, 0.2, 0.3, 0.1, 0.5, 0.3, 0.5, 0.6, 0.7, 0.8, 0.9, 1.2, 1.2, 1, 1, 1, 0.8, 0.5, 0.5])
   const options = {
     title: {
       text: 'Maré'
@@ -17,6 +17,9 @@ function GraficoMare() {
       categories: ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
     },
     yAxis: {
+      labels: {
+        format: '{value}m',
+      },
       title: {
         text: 'Altura da maré(m)'
       }
