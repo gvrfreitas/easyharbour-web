@@ -35,13 +35,14 @@ function GraficoMediaDeTempo() {
   },
   series: [
     {
+      name: 'Fundiado',
+      data: [60]
+  },
+    {
       name: 'Porto',
       data: [80]
     },
-    {
-      name: 'Berço',
-      data: [60]
-  }]
+    ]
 }
 
     return (
