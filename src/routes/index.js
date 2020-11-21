@@ -3,8 +3,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Dashboard from '../pages/Dashboard';
-import Operation from '../pages/Operacao';
-import Percentage from '../pages/Percentage';
+import Home from '../pages/Home';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -13,9 +12,8 @@ function Routes() {
     <Switch>
       <>
         <Header />
-        <Route path="/" exact component={Dashboard} />
-        <Route path="/operation" component={Operation} />
-        <Route path="/porcentagem" component={Percentage} />
+        <Route path="/" exact component={Home} />
+        <Route path="/dashboard" component={Dashboard} />
         <Footer />
       </>
     </Switch>

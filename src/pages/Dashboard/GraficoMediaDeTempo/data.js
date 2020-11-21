@@ -6,7 +6,7 @@ export const options = {
         type: 'pie'
     },
     title: {
-        text: 'Tempo Médio de Ocupação do Berço'
+        text: 'Tempo médio de permanência'
     },
     accessibility: {
         point: {
@@ -27,12 +27,12 @@ export const options = {
         name: 'tempo',
         colorByPoint: true,
         data: [{
-            name: 'Ocupação no Berço',
+            name: 'Área de fudeio',
             y: 61.41,
             sliced: true,
             selected: true
         }, {
-            name: 'Tempo médio de permanência',
+            name: 'Porto',
             y: 38.59,
             sliced: false,
             selected: true

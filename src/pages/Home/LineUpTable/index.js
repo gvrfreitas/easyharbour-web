@@ -1,27 +1,30 @@
 import React from 'react';
 
-import { TableContainer, Title } from '../../../components/Table/styles';
 import Table from '../../../components/Table';
 
-function OperationTable() {
+
+function LineUpTable() {
   const tableHeader = [
-    "Nome",
-    "Berço",
+    "Posição",
+    "Navio",
+    "Draft",
+    "Beam",
+    "ATA",
+    "WT",
     "Produto",
-    "Peso bruto",
-    "Porto destino",
-    "Atracação efetiva",
-    "Laytime",
-    "Desatracação prevista",
-    "Desatracação efetiva",
-    "Status"
+    "Capacidade ",
+    "Prioridade",
+    "Programado",
+    "Atracação prevista",
+    "Berço",
+    "Status",
   ];
 
   return (
     <Table
       tableHeader={tableHeader}
-      title={"Fila de operação"}
-      marginTop={"-70px"}
+      title={"Line up - Programado"}
+      marginTop={"20px"}
     >
       <tr>
         <td>1°</td>
@@ -34,6 +37,9 @@ function OperationTable() {
         <td>61200</td>
         <td>8</td>
         <td>Sim</td>
+        <td></td>
+        <td>38</td>
+        <td>Adiantado</td>
       </tr>
       <tr>
         <td>2°</td>
@@ -46,9 +52,12 @@ function OperationTable() {
         <td>61200</td>
         <td>8</td>
         <td>Sim</td>
+        <td></td>
+        <td>38</td>
+        <td>Adiantado</td>
       </tr>
       <tr>
-        <td>1°</td>
+        <td>3°</td>
         <td>CUMA</td>
         <td> 12</td>
         <td> 229</td>
@@ -58,9 +67,12 @@ function OperationTable() {
         <td>61200</td>
         <td>8</td>
         <td>Sim</td>
+        <td></td>
+        <td>38</td>
+        <td>Adiantado</td>
       </tr>
       <tr>
-        <td>1°</td>
+        <td>4°</td>
         <td>CUMA</td>
         <td> 12</td>
         <td> 229</td>
@@ -70,10 +82,12 @@ function OperationTable() {
         <td>61200</td>
         <td>8</td>
         <td>Sim</td>
+        <td></td>
+        <td>38</td>
+        <td>Adiantado</td>
       </tr>
     </Table>
-
   );
 }
 
-export default OperationTable;
+export default LineUpTable;

@@ -3,7 +3,7 @@ export const options = {
         type: 'column'
     },
     title: {
-        text: 'Tempo médio'
+        text: 'Tempo Médio de Ocupação do Berço'
     },
     subtitle: {
         text: 'Data: <a href="https://en.wikipedia.org/wiki/World_population">15/11 a 21/11</a>'

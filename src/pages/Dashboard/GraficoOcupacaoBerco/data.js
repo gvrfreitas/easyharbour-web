@@ -3,7 +3,7 @@ export const options = {
         type: 'bar'
     },
     title: {
-        text: 'Percentual Portuário'
+        text: 'Status'
     },
     subtitle: {
         text: 'Data: <a href="https://en.wikipedia.org/wiki/World_population">15/11 a 21/11</a>'

@@ -2,7 +2,8 @@ import React from 'react';
 
 import Table from '../../../components/Table';
 
-function FundiadosTable() {
+
+function LineUpTableSugestion() {
   const tableHeader = [
     "Posição",
     "Navio",
@@ -22,7 +23,7 @@ function FundiadosTable() {
   return (
     <Table
       tableHeader={tableHeader}
-      title={"Fila de atracação"}
+      title={"Line up - Programado"}
       marginTop={"20px"}
     >
       <tr>
@@ -89,4 +90,4 @@ function FundiadosTable() {
   );
 }
 
-export default FundiadosTable;
+export default LineUpTableSugestion;

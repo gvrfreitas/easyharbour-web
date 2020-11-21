@@ -1,20 +1,19 @@
 import React from 'react';
 
-import FundiadosTable from './FundiadosTable';
-import GraficoClima from './GraficoClima';
-import GraficoVento from './GraficoVento';
-
+import GraficoTempoMedio from './GraficoTempoMedio';
+import GraficoOcupacaoBerco from './GraficoOcupacaoBerco';
+import GraficoMediaDeTempo from './GraficoMediaDeTempo';
 
 function Dashboard() {
-  return (
-    <>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <GraficoClima />
-        <GraficoVento />
-      </div>
-      <FundiadosTable />
-    </>
-  );
+    return (
+        <>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <GraficoTempoMedio />
+                <GraficoOcupacaoBerco />
+                <GraficoMediaDeTempo />
+            </div>
+        </>
+    );
 }
 
 export default Dashboard;

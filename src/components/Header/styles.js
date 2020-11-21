@@ -32,9 +32,14 @@ export const Navlink = styled(Nav.Link)`
 
         &:hover{
           cursor: pointer;
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2);
         }
 
-        &.active{
+        &:active{
           padding-bottom: 5px;
           border-bottom: 3px solid #fff;
         }
