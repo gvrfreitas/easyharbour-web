@@ -9,7 +9,7 @@ import { TableContainer } from '../styles';
 const InfoPrecisamMare = styled.div`
     border: solid;
     border-width: 0px 1px 0px 0px;
-    padding: 4px 12px 0px 37px;
+    padding: 4px 18px 0px 18px;
     justify-content: center;
     width: 50%;
 
@@ -36,6 +36,28 @@ const InfoPrecisamMare = styled.div`
         }
     }
 
+`;
+
+export const Box = styled.div`
+  margin-top: 30px;
+  background:rgb(124, 181, 236);
+  width: 100%;
+  color:#fff;
+  font-size: 16px;
+  padding: 3px 12px 3px 5px;
+  height: 140px;
+
+    span{
+    color:#fff;
+    font-size: 15px;
+    margin-left: 0px;
+    }
+
+    p{
+    margin-top: 60px;
+    font-size: 30px;
+    float:right;
+    }
 `;
 
 export const Container = styled.div`
@@ -83,24 +105,26 @@ function InfoNavios() {
     series: [{
       name: 'Não efetivado',
       data: [6]
-  },
-  {
-    name: 'Efetivado',
-    data: [4],
-}]
+    },
+    {
+      name: 'Efetivado',
+      data: [4],
+    }]
   }
 
   return (
     <Container>
       <InfoPrecisamMare >
         <span>Navio x Maré</span>
-        <div style={{ display: "flex" }}>
-          <ul>
-            <li>Necessidade de maré para manobra</li>
-            <li><h2>40%</h2></li>
-            <li style={{marginTop: "15px"}}>Perderam maré de saída do berço</li>
-            <li><h2>20</h2></li>
-          </ul>
+        <div>
+          <Box>
+            <span>Necessidade de maré para manobra</span>
+            <p>40%</p>
+          </Box>
+          <Box style={{marginTop: "20px"}}>
+            <span>Perderam maré de saída do berço</span>
+            <p>20</p>
+          </Box>
         </div>
       </InfoPrecisamMare>
       <div style={{ width: "50%" }}>

@@ -6,57 +6,42 @@ import { TableContainer } from '../styles';
 
 function GraficoMediaDeTempo() {
  const options = {
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
+  chart: {
+      type: 'column'
+  },
+  title: {
+      text: 'Tempo médio de permanência (h)'
+  },
+  xAxis: {
+      categories: ['Tempo de ocupação médio'],
+  },
+  yAxis: {
+      title: {
+          text: 'Horas (H)',
+      }
+  },
+  tooltip: {
+      valueSuffix: 'h'
+  },
+  plotOptions: {
+      bar: {
+          dataLabels: {
+              enabled: true
+          }
+      }
+  },
+  credits: {
+      enabled: false
+  },
+  series: [
+    {
+      name: 'Porto',
+      data: [80]
     },
-    title: {
-      text: 'Tempo de permanência (h)'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    accessibility: {
-        point: {
-            valueSuffix: '%'
-        }
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: true,
-                format: '<b>{point.name}</b><br>{point.percentage:.1f} %',
-                style:{
-                  fontSize: 13,
-                },
-                distance: -50,
-                filter: {
-                    property: 'percentage',
-                    operator: '>',
-                    value: 4
-                }
-            }
-        }
-    },
-    series: [{
-            name: 'tempo',
-            colorByPoint: true,
-            data: [{
-                name: 'Área de fudeio',
-                y: 61.41,
-                sliced: true,
-                selected: true
-            }, {
-                name: 'Porto',
-                y: 38.59,
-                sliced: false,
-                selected: true
-            }]
-        }]
+    {
+      name: 'Berço',
+      data: [60]
+  }]
 }
 
     return (

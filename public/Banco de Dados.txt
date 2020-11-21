@@ -1,0 +1,30 @@
+a)
+INSERT PACIENTE (CPF, Nome, DataNasc, Atendimento, DConvenio) VALUES ('456.984.895-56','Luiz Ribeiro','03/06/1989','Normal','16.789.456.0001-56');
+INSERT PACIENTE (CPF, Nome, DataNasc, Atendimento, DConvenio) VALUES ('001.564.777-01','Jorel Maciel','02/10/1999','Normal','16.789.456.0001-56');
+INSERT PACIENTE (CPF, Nome, DataNasc, Atendimento, DConvenio) VALUES ('565.645.701-03','Renato Ribeiro','18/06/2000','Normal','16.789.456.0001-56');
+
+INSERT CONVÊNIO (CNPJ, Nome) VALUE ('16.789.456.0001-56','Luiz Ribeiro', 'Jorel Maciel', 'Renato Ribeiro');
+
+INSERT MEDICO (Nome, Especialidade, Endereço, DataNasc) VALUES ('Dr. Maciel Pereira', 'Otorrinoralingologista', '15/11/1979');
+INSERT MEDICO (Nome, Especialidade, Endereço, DataNasc) VALUES ('Dr. Carlos Moreira', 'Otorpedista', '17/04/1989');
+INSERT MEDICO (Nome, Especialidade, Endereço, DataNasc) VALUES ('Dr. José Franco', 'Clínico Geral', '01/11/1969');
+
+INSERT VISITA (Paciente, Visitante, DataVisita, HoraVisita) VALUES ('Luiz Ribeiro','Karla Fonseca','15/07/2020','15:49');
+INSERT VISITA (Paciente, Visitante, DataVisita, HoraVisita) VALUES ('Luiz Ribeiro','Joana Fonseca','16/07/2020','13:20');
+INSERT VISITA (Paciente, Visitante, DataVisita, HoraVisita) VALUES ('Renato Ribeiro','Maria Gonzaga','20/10/2020','17:01');
+
+INSERT ACOMPANHANTE (CPF, Nome, DataNasc) VALUES ('754.123.789-55','Josué Martins','23/02/1993');
+INSERT ACOMPANHANTE (CPF, Nome, DataNasc) VALUES ('005.123.789-06','Maria Martins','11/11/1995');
+INSERT ACOMPANHANTE (CPF, Nome, DataNasc) VALUES ('126.842.709-55','Bernardo Junior','01/02/2001');
+
+
+Remoção Paciente;
+DELET FROM PACIENTE WHERE CPF='456.984.895-56';
+Remoção Visita;
+DELET FROM VISITA WHERE CPF='126.842.709-55';
+
+
+Mudar data de nascimento do paciente;
+UPDATE PACIENTE SET DataNasc='14/06/1989' WHERE CPF='456.984.895-56';
+Mudar especialidade do médico;
+UPDATE MEDICO SET Especialidade='Cirugião Geral' WHERE Nome='Dr. José Franco';
