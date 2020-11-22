@@ -37,7 +37,7 @@ function LineUpTableSugestion(props) {
         <td>61200</td>
         <td>8</td>
         <td>22/11/2020 18:30:00</td>
-        <td>38</td>
+        <td>Armazén 19</td>
       </tr>
       <tr>
         <td>2°</td>
@@ -50,8 +50,7 @@ function LineUpTableSugestion(props) {
         <td>61200</td>
         <td>9</td>
         <td>22/11/2020 19:30:00</td>
-        <td>38</td>
-
+        <td>Armazén 19</td>
       </tr>
       <tr>
         <td>3°</td>
@@ -62,7 +61,7 @@ function LineUpTableSugestion(props) {
         <td>2horas</td>
         <td>Milho a granel</td>
         <td>61200</td>
-        <td>8</td>
+        <td>Armazén 19</td>
         <td>22/11/2020 21:00:00</td>
         <td>38</td>
       </tr>
