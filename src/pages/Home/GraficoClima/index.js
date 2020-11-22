@@ -11,6 +11,9 @@ function GraficoClima() {
     title: {
       text: 'Precipitação'
     },
+    subtitle:{
+      text: `${new Date().toLocaleDateString('pt-br')}`,
+    },
     xAxis: {
       title: {
         text: 'Horário',
@@ -29,17 +32,6 @@ function GraficoClima() {
     tooltip: {
       shared: true
     },
-    legend: {
-      layout: 'vertical',
-      align: 'left',
-      x: 120,
-      verticalAlign: 'top',
-      y: 50,
-      floating: true,
-      backgroundColor:
-        'rgba(255,255,255,0.25)'
-    },
-
     series: [{
       name: 'Preciptação',
       type: 'column',
@@ -57,7 +49,7 @@ function GraficoClima() {
         // loading ? (
         //   <Loader/>
         // ) : (
-          <HighchartsReact highcharts={Highcharts} options={options} />
+        <HighchartsReact highcharts={Highcharts} options={options} />
         //)
       }
     </Container>

@@ -6,34 +6,62 @@ import GraficoClima from './GraficoClima';
 import GraficoMare from './GraficoMare';
 import OperationTable from './OperationTable';
 
-import { getClima } from '../../services/index';
+import { getMare } from '../../services/index';
 
 
 function Home() {
-  const [dataClima, setDataClima] = [];
+  const [mare, setMare] = useState([]);
+  const [dataMare, setDataMare] = useState([])
+  const option = {
+    hour: 'numeric',
+    minute: 'numeric'
+  }
 
   useEffect(() => {
-    getDataClima();
-  }, [])
+    getDadosMare()
+  }, []);
 
-  async function getDataClima() {
+  async function getDadosMare() {
     try {
-      const response = await getClima();
+      const response = await getMare();
 
-      setDataClima(response.data);
+      const dataOrdenada = response.data.sort((a, b) => {
+        if (new Date(a.data).getTime() > new Date(b.data).getTime())
+          return 1
+        if (new Date(b.data).getTime() > new Date(a.data).getTime())
+          return -1
+
+        return 0
+      });
+
+      const mareDataActual = dataOrdenada.filter(item => item.data ? new Date().getDate() === new Date(item.data).getDate() : '');
+
+      const dataFormatada = mareDataActual.map(item => `${addZero(new Date(item.data).getHours())}:${new Date(item.data).getMinutes()}`);
+
+      const mareFormatada = mareDataActual.map(item => item.altura);
+
+      setDataMare(dataFormatada);
+      setMare(mareFormatada);
     } catch (err) {
-      console.log("Não funcionou");
+      console.log("Requisição falhou")
     }
+  }
+
+  function addZero(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
   }
 
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <GraficoClima />
-        <GraficoMare />
+        <GraficoMare mare={mare} dataMare={dataMare} />
       </div>
       <LineUpTable />
-      <LineUpTableSugestion/>
+      <LineUpTableSugestion />
       <OperationTable />
     </>
   );
