@@ -9,9 +9,11 @@ import OperationTable from './OperationTable';
 import { getMare } from '../../services/index';
 
 
+
 function Home() {
   const [mare, setMare] = useState([]);
   const [dataMare, setDataMare] = useState([])
+  const [loadMare, setLoadMare] = useState(true);
   const option = {
     hour: 'numeric',
     minute: 'numeric'
@@ -42,6 +44,7 @@ function Home() {
 
       setDataMare(dataFormatada);
       setMare(mareFormatada);
+      setLoadMare(false);
     } catch (err) {
       console.log("Requisição falhou")
     }
@@ -57,12 +60,16 @@ function Home() {
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <GraficoClima />
-        <GraficoMare mare={mare} dataMare={dataMare} />
+        <GraficoClima loadMare={loadMare}/>
+        <GraficoMare
+          mare={mare}
+          dataMare={dataMare}
+          loadMare={loadMare}
+        />
       </div>
-      <LineUpTable />
-      <LineUpTableSugestion />
-      <OperationTable />
+      <LineUpTable loadMare={loadMare}/>
+      <LineUpTableSugestion loadMare={loadMare}/>
+      <OperationTable loadMare={loadMare}/>
     </>
   );
 }

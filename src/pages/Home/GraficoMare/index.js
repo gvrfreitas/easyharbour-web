@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import { Container } from '../styles';
+import Loader from '../../../components/Loader';
 
 function GraficoMare(props) {
-  const { mare, dataMare } = props;
+  const { mare, dataMare, loadMare } = props;
 
   const options = {
     title: {
@@ -54,7 +55,14 @@ function GraficoMare(props) {
 
   return (
     <Container style={{ marginRight: '20px' }}>
-      <HighchartsReact highcharts={Highcharts} options={options} />
+      {
+        loadMare ? (
+          <Loader />
+        ) : (
+          <HighchartsReact highcharts={Highcharts} options={options} />
+        )
+      }
+
     </Container>
   );
 }

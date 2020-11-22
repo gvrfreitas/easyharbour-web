@@ -3,7 +3,8 @@ import React from 'react';
 import Table from '../../../components/Table';
 import { getColor } from '../../../utils'
 
-function LineUpTableSugestion() {
+function LineUpTableSugestion(props) {
+  const { loadMare } = props;
   const tableHeader = [
     "Posição",
     "Navio",
@@ -23,6 +24,7 @@ function LineUpTableSugestion() {
       tableHeader={tableHeader}
       title={"Line up - Sugerido"}
       marginTop={"20px"}
+      loadMare={loadMare}
     >
       <tr>
         <td>1°</td>

@@ -5,7 +5,8 @@ import HighchartsReact from 'highcharts-react-official';
 import { Container } from '../styles';
 import Loader from '../../../components/Loader';
 
-function GraficoClima() {
+function GraficoClima(props) {
+  const { loadMare } = props;
   const [loading, setLoading] = useState(true)
   const options = {
     title: {
@@ -46,11 +47,11 @@ function GraficoClima() {
   return (
     <Container style={{ marginLeft: '20px', marginRight: '10px' }}>
       {
-        // loading ? (
-        //   <Loader/>
-        // ) : (
+        loadMare ? (
+          <Loader/>
+        ) : (
         <HighchartsReact highcharts={Highcharts} options={options} />
-        //)
+        )
       }
     </Container>
   );

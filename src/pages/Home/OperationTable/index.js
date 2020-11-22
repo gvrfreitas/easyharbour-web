@@ -3,7 +3,8 @@ import React from 'react';
 import Table from '../../../components/Table';
 import {getColor} from '../../../utils'
 
-function OperationTable() {
+function OperationTable(props) {
+  const { loadMare } = props;
   const tableHeader = [
     "Nome",
     "Berço",
@@ -22,6 +23,7 @@ function OperationTable() {
       tableHeader={tableHeader}
       title={"Em operação"}
       marginTop={"20px"}
+      loadMare={loadMare}
     >
       <tr>
         <td>2°</td>
