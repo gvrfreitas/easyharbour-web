@@ -40,7 +40,7 @@ function LineUpTable(props) {
         <td>8</td>
         <td>Sim</td>
         <td>22/11/2020 18:30:00</td>
-        <td>38</td>
+        <td>Armazén 19</td>
         <td style= {{color: getColor("Adiantado")}}>Adiantado</td>
       </tr>
       <tr>
@@ -55,7 +55,7 @@ function LineUpTable(props) {
         <td>8</td>
         <td>Sim</td>
         <td>22/11/2020 20:00:00</td>
-        <td>38</td>
+        <td>Armazén 19</td>
         <td style= {{color: getColor("Atrasado")}}>Atrasado</td>
       </tr>
       <tr>
@@ -70,7 +70,7 @@ function LineUpTable(props) {
         <td>9</td>
         <td>Sim</td>
         <td>22/11/2020 21:00:00</td>
-        <td>38</td>
+        <td>Armazén 19</td>
         <td style= {{color: getColor("Em tempo")}}>Em tempo</td>
       </tr>
     </Table>
