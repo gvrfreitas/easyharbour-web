@@ -61,9 +61,9 @@ function LineUpTableSugestion(props) {
         <td>2horas</td>
         <td>Milho a granel</td>
         <td>61200</td>
-        <td>Armazén 19</td>
+        <td>8</td>
         <td>22/11/2020 21:00:00</td>
-        <td>38</td>
+        <td>Armazén 19</td>
       </tr>
     </Table>
   );
