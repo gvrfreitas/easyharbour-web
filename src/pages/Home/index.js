@@ -47,6 +47,7 @@ function Home() {
       setLoadMare(false);
     } catch (err) {
       console.log("Requisição falhou")
+      setLoadMare(false);
     }
   }
 
