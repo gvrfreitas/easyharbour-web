@@ -6,8 +6,8 @@ import { Container } from '../styles';
 import Loader from '../../../components/Loader';
 
 function GraficoClima(props) {
-  const { loadMare } = props;
-  const [loading, setLoading] = useState(true)
+  const { loadPrecipitacao, dataPrecipitacao, precipitacao, chovendo } = props;
+
   const options = {
     title: {
       text: 'Precipitação'
@@ -20,14 +20,14 @@ function GraficoClima(props) {
         text: 'Horário',
       },
 
-      categories: ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
+      categories: dataPrecipitacao,
     },
     yAxis: [{ // Primary yAxis
       labels: {
-        format: '{value}mm',
+        format: '{value}%',
       },
       title: {
-        text: 'Volume de preciptação',
+        text: 'Chance de preciptação',
       }
     }],
     tooltip: {
@@ -36,9 +36,9 @@ function GraficoClima(props) {
     series: [{
       name: 'Preciptação',
       type: 'column',
-      data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4, 50],
+      data: precipitacao,
       tooltip: {
-        valueSuffix: ' mm'
+        valueSuffix: ' %'
       }
 
     }],
@@ -47,10 +47,13 @@ function GraficoClima(props) {
   return (
     <Container style={{ marginLeft: '20px', marginRight: '10px' }}>
       {
-        loadMare ? (
+        loadPrecipitacao  ? (
           <Loader/>
         ) : (
+          <>
+          <span>Há chuva no momento: {chovendo ? 'Sim' : 'Não'}</span>
         <HighchartsReact highcharts={Highcharts} options={options} />
+        </>
         )
       }
     </Container>
