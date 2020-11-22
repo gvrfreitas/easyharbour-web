@@ -61,7 +61,7 @@ function Home() {
 
   async function getDadosClima() {
     try {
-      //const response = await getClima();
+      const response = await getClima();
 
       const dataFormatada = response.data.map(item => `${addZero(new Date(item.data).getHours())}:${addZero(new Date(item.data).getMinutes())}`);
       const chancePrecipitacao = response.data.map(item => item.chanceChuva);

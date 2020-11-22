@@ -30,46 +30,46 @@ function LineUpTable(props) {
     >
       <tr>
         <td>1°</td>
-        <td>CUMA</td>
+        <td>ALEXANDRA KPN</td>
         <td> 12</td>
         <td> 229</td>
-        <td>10/11/2020 17:30:00</td>
-        <td>2horas</td>
+        <td>22/11/2020 17:30:00</td>
+        <td>1horas</td>
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
         <td>Sim</td>
-        <td></td>
+        <td>22/11/2020 18:30:00</td>
         <td>38</td>
         <td style= {{color: getColor("Adiantado")}}>Adiantado</td>
       </tr>
       <tr>
         <td>2°</td>
-        <td>CUMA</td>
+        <td>AMALTHIA</td>
         <td> 12</td>
         <td> 229</td>
-        <td>10/11/2020 17:30:00</td>
-        <td>2horas</td>
+        <td>22/11/2020 19:00:00</td>
+        <td>1horas</td>
         <td>Milho a granel</td>
         <td>61200</td>
         <td>8</td>
         <td>Sim</td>
-        <td></td>
+        <td>22/11/2020 20:00:00</td>
         <td>38</td>
         <td style= {{color: getColor("Atrasado")}}>Atrasado</td>
       </tr>
       <tr>
         <td>3°</td>
-        <td>CUMA</td>
+        <td>BOW FORTUNE</td>
         <td> 12</td>
         <td> 229</td>
-        <td>10/11/2020 17:30:00</td>
+        <td>22/11/2020 19:00:00</td>
         <td>2horas</td>
         <td>Milho a granel</td>
         <td>61200</td>
-        <td>8</td>
+        <td>9</td>
         <td>Sim</td>
-        <td></td>
+        <td>22/11/2020 21:00:00</td>
         <td>38</td>
         <td style= {{color: getColor("Em tempo")}}>Em tempo</td>
       </tr>
